@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Temperature Conversion</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tempreture.css">
+</head>
+<body>
+    <div class="heading">
+        <marquee scrollamount="13"  direction=""  ><br><pre>Tempreture Converter         Tempreture Converter        Tempreture Converter        Tempreture Converter        Tempreture Converter        Tempreture Converter        Tempreture Converter        Tempreture Converter</pre></br></marquee>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <label for="celsius">Celsius</label>
+            <input type="number" id="celsius" oninput= "cellToFara()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit" oninput = "faraToCell()">
+        </div>
+    </div>
+    <div class="thermometer"></div>
+    <script src="tempreture.js"></script>
+</body>
+<main>
+<div>
+<details class="info">
+    <summary>Logic Behind conversion :</summary>
+    <p> <br><br><span>The logic behind the temperature conversion between degree Celsius and Fahrenheit is based on the following formula: <br> <pre class="formula">F = C × 59 ​+ 32</pre> <br>This formula means that to convert a temperature from Celsius to Fahrenheit, you need to multiply the Celsius value by 9/5 and then add 32. For example, if the temperature is 25°C, then the equivalent temperature in Fahrenheit is: <br><pre class="formula">F = 25 × 59 ​+ 32</pre> <br><pre class="formula">F = 45 + 32</pre> <br> <pre class="formula">F = 77</pre></br> The origin of this formula can be traced back to the work of Daniel Gabriel Fahrenheit, a German physicist who invented the Fahrenheit scale in 1724. He based his scale on three fixed points: the freezing point of brine (a mixture of ice, water, and salt) at 0°F, the freezing point of pure water at 32°F, and the normal human body temperature at 96°F2. He then divided the interval between 32°F and 96°F into 64 equal parts, each corresponding to one degree. <br> The Celsius scale, on the other hand, was proposed by Anders Celsius, a Swedish astronomer, in 17423. He originally defined his scale with the freezing point of water at 100°C and the boiling point of water at 0°C, but later reversed it to match the direction of the Fahrenheit scale3. He then divided the interval between 0°C and 100°C into 100 equal parts, each corresponding to one degree3. <br><br>To make the two scales compatible, one needs to find a linear relationship between them, such that: <br> <br><pre class="formula"> F = a x C + b </pre></br> <br> where a and b are constants. To find these constants, we can use the two known points on both scales: the freezing point of water (0°C, 32°F) and the boiling point of water (100°C, 212°F). Substituting these values into the equation, we get: <br> <br><pre class="formula">32 = a × 0 + b <br><br>212 = a × 100 + b</pre></br> <br>Solving for a and b, we get: <br> <br><pre class="formula">a = ( 212 − 32 ​) / ( 100 - 0 ) = 5 / 9​</pre><br><pre class="formula">b = 32 − a × 0 <br><br>= 32</pre></br> <br> Therefore, the formula for converting Celsius to Fahrenheit is: <br><br><pre class="formula">F = C x (9/5) + 32</pre> <br><br>I hope this explanation helps you understand the logic behind the temperature conversion.
+</span></p>
+</details></div>
+</main>
+</html>
